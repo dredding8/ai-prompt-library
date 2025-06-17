@@ -1,0 +1,135 @@
+Analyze Feature Requests 1dcb1fbd87d98103a7b5ee74fdea11dd.md
+Analyze Porter’s Five Forces 1dcb1fbd87d98105aecdc8e1911b2e20.md
+articulate-the-impact-of-your-user-research-work-f.md
+audit-a-research-plan-for-inclusivity-and-accessib.md
+Brainstorm a Beachhead Segment 1dcb1fbd87d981819c04dee0e35a457e.md
+Brainstorm a Product Vision 1dcb1fbd87d9819ebadcf144dfd59ad0.md
+Brainstorm Experiments Existing Product 1dcb1fbd87d98137a865c4e4232d532b.md
+Brainstorm Experiments New Product 1dcb1fbd87d981fe8ddaf6b34f5350a8.md
+Brainstorm Growth Loops 1dcb1fbd87d981f88b96cb5cb82b8268.md
+Brainstorm GTM Motions 1dcb1fbd87d98148995febd0b69827fd.md
+Brainstorm Marketing Ideas 1dcb1fbd87d98163ab18d1008ff97bf7.md
+Brainstorm Monetization Strategy 1dcb1fbd87d98110b513fc5d05054314.md
+Brainstorm New Ideas Existing Product 1dcb1fbd87d981c49ac4fd444f027025.md
+Brainstorm New Ideas New Product 1dcb1fbd87d981c2a5f4e35c80d351b8.md
+Brainstorm Positioning Ideas 1dcb1fbd87d981aa80a3ccff87bbf77a.md
+Brainstorm Product Name 1dcb1fbd87d9815c8720ededfb1779b0.md
+Brainstorm Taglines 1dcb1fbd87d9815b919bdda36855a130.md
+Brainstorm Team-Level OKRs 1dcb1fbd87d9818895d0e77faa0ae2fd.md
+brainstorm-and-choose-the-right-deliverable.md
+break-down-a-large-research-question-into-actionab.md
+categorize-large-scale-survey-data.md
+choose-the-best-research-method.md
+choose-the-right-survey-type-for-your-research-goa.md
+Cohort Analysis 1dcb1fbd87d9810f86bfd67afb797942.md
+combine-qual-and-quant-with-purpose.md
+Competitor Analysis 1dcb1fbd87d981b58e0efb6dad5986a3.md
+connect-research-to-product-metrics-and-quantify-p.md
+convert-sensitive-research-insights-into-shareable.md
+craft-a-portfolio-case-study-that-highlights-your-.md
+craft-a-segmentation-survey-from-qualitative-perso.md
+craft-an-executive-summary.md
+craft-professional-and-engaging-participant-commun.md
+Create a Product Requirements Document (PRD) 1dcb1fbd87d98169a690e36f6dd7f2d5.md
+Create Detailed Test Scenarios 1dcb1fbd87d981f88716f3666c840721.md
+Create Job Stories 1dcb1fbd87d981c0943bd4fc5a9cb684.md
+Create User Stories 1dcb1fbd87d9813faec7fbad452df943.md
+Create WWAs 1dcb1fbd87d9812699d8d55a2cc89714.md
+create-a-business-plan-for-a-user-research-project.md
+create-a-concept-test-interview-guide.md
+create-a-one-pager-to-showcase-the-business-value-.md
+create-a-quantitative-research-plan-to-evaluate-qu.md
+create-a-recruitment-plan-for-hard-to-reach-audien.md
+create-a-research-strategy-that-supports-the-produ.md
+create-a-user-research-budget.md
+create-a-workshop-for-analyzing-research-sessions.md
+create-a-workshop-to-kick-off-discovery-projects.md
+create-actionable-recommendations-based-on-insight.md
+create-an-generative-interview-guide-from-research.md
+create-an-interview-script-for-a-journey-map.md
+create-inclusion-criteria-for-participants-without.md
+create-usability-testing-tasks.md
+Customer Outreach 1dcb1fbd87d98188b897d6d0518a4e35.md
+define-a-research-workshop-and-agenda.md
+define-and-write-a-survey.md
+demonstrate-the-long-term-impact-of-research-to-le.md
+design-a-collaborative-prioritization-session-with.md
+design-a-high-impact-screener.md
+determine-the-business-impact-of-a-user-research-p.md
+determine-the-ideal-sample-size.md
+Develop a GTM Strategy 1dcb1fbd87d9819aafcbf1ab3bbc4688.md
+develop-a-meaningful-journey-map.md
+distinguish-signals-from-noise-in-a-messy-data-set.md
+Draft a Privacy Policy 1dcb1fbd87d981a9a4cbdf91212dd2db.md
+Draft an NDA 1dcb1fbd87d981faa0eae3dadccb8289.md
+draft-multiple-insight-statements-from-the-same-th.md
+enhance-your-research-report.md
+Estimate Market Size (TAM, SAM, TOM) 1dcb1fbd87d98193a417ebf0d1cc208d.md
+evaluate-an-existing-survey-for-bias,-fatigue,-and.md
+frameworks-to-synthesize-large-amounts-of-qualitat.md
+Generate a Business Model 1dcb1fbd87d981d9ab9fe58a44dc283e.md
+Generate a Dummy Dataset for Testing 1dcb1fbd87d981519d9dcee77f324e6c.md
+Generate a Lean Canvas 1dcb1fbd87d981be8e86e51b87cf20b5.md
+Generate a Product Strategy 1dcb1fbd87d9817bb1aef83bfb2138fa.md
+Generate a Value Proposition 1dcb1fbd87d981fdacbdd47ab7d72fa6.md
+Generate SQL queries 1dcb1fbd87d9816fbf32f899e6e51770.md
+Generate Value Proposition Statements 1dcb1fbd87d98117be3ef0cbf5c71b81.md
+get-started-on-a-persona-research-project.md
+get-started-with-jobs-to-be-done-jtbd-in-user-re.md
+get-unstuck-on-synthesis.md
+get-unstuck-when-starting-a-research-project.md
+handle-stakeholder-pushback-on-a-user-research-pro.md
+Help With a Pre-Mortem Analysis 1dcb1fbd87d981649e42d0d084ad5daa.md
+Identify Assumptions Existing Product 1dcb1fbd87d9811bb7d5ec53226f40de.md
+Identify Assumptions New Product 1dcb1fbd87d981ebbc64f429f9a1482f.md
+Identify Grammar And Flow Errors 1dcb1fbd87d9818cab52f011413d608b.md
+Identify ICP (Ideal Customer Profile) 1dcb1fbd87d98170b68dc5d536c02db6.md
+Identify North Star Metric 1dcb1fbd87d9814b9de1db452b7eed8b.md
+Identify Potential Market Segments 1dcb1fbd87d981e09552eab329527162.md
+identify-red-flags-in-participants-that-could-skew.md
+identify-the-right-scope-for-your-research-project.md
+make-findings-more-actionable-for-stakeholders.md
+make-your-research-land.md
+organize-research-findings-to-align-with-goals-and.md
+Outcome-Based Roadmap 1dcb1fbd87d9817ebbfbe917109d6959.md
+overcome-analysis-paralysis.md
+Perform Ansoff Matrix Analysis 1dcb1fbd87d981419de2f3def0fd9c02.md
+Perform PESTLE Analysis 1dcb1fbd87d981ee8660e6929e68f1f5.md
+Perform SWOT Analysis 1dcb1fbd87d9817eb5decc38fce916dd.md
+pitch-research-projects-aligned-with-organizationa.md
+plan-a-3-month-roadmap-that-aligns-research-with-p.md
+plan-a-concept-test.md
+plan-and-run-a-question-gathering-workshop-with-st.md
+plan-research-for-a-tight-timeline-with-limited-re.md
+prepare-for-a-senior-uxr-interview-with-strategic-.md
+Prioritize Assumptions 1dcb1fbd87d981e4ba8be39b55a04b90.md
+Prioritize Features 1dcb1fbd87d981b79e1cfaa5660375c0.md
+prioritize-your-research-goals.md
+qualitative-usability-test-research-plan.md
+quantitative-usability-test-research-plan.md
+refine-questions-for-unmoderated-sessions.md
+reflect,-prioritize,-and-create-a-research-plan.md
+reframe-vague-or-weak-insights-into-compelling-nar.md
+Review a PM Resume 1dcb1fbd87d9810cb0a6d8cf8ed46ed4.md
+review-high-level-findings-to-prepare-for-a-discus.md
+reword-leading-research-questions-to-be-neutral.md
+Sentiment Analysis 1dcb1fbd87d98171bd78ccac9550d8c0.md
+SEO Optimization 1dcb1fbd87d98163b351fb371d6a9ffa.md
+share-research-findings-that-a-stakeholder-may-not.md
+suggested-survey-wording-to-ask-about-brand-attrib.md
+Summarize a Customer Interview 1dcb1fbd87d981b48996f429a2b526fc.md
+Summarize an Internal Meeting 1dcb1fbd87d9816b9b5ad28f08962846.md
+synthesize-insights-to-be-more-actionable.md
+tailor-interview-questions-for-specific-research-t.md
+thought-partner-for-creating-a-survey.md
+transform-research-objectives-into-actionable-ques.md
+translate-insights-into-hypotheses-for-product-tea.md
+turn-past-research-into-reusable-insights.md
+turn-research-insights-into-a-story-that-drives-ac.md
+turn-stakeholder-asks-into-focused,-actionable-res.md
+turn-stakeholder-requests-into-clear-research-goal.md
+understand-and-apply-the-jtbd-four-forces-diagram.md
+Untitled 1dcb1fbd87d981a183d9d36f797126ef.md
+User Personas Research 1dcb1fbd87d981d8848df9cb3360c814.md
+User Segmentation 1dcb1fbd87d98167b6baf7bd18e2a4eb.md
+write-a-performance-review-that-showcases-your-inf.md
