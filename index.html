@@ -3,119 +3,166 @@
 <head>
     <title>AI Prompt Library</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        .discipline { border: 2px solid #ddd; margin: 20px 0; padding: 20px; border-radius: 8px; }
-        .discipline h2 { margin-top: 0; color: #333; }
-        .section { margin: 15px 0; }
-        .section h3 { color: #666; font-size: 1.1em; margin-bottom: 8px; }
-        ul { margin: 0; padding-left: 20px; }
-        li { margin: 5px 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #333; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        .stats { background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .all-prompts { columns: 2; column-gap: 40px; }
+        .all-prompts li { margin: 8px 0; break-inside: avoid; }
         a { color: #0066cc; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .count { color: #999; font-size: 0.9em; }
+        @media (max-width: 768px) { .all-prompts { columns: 1; } }
     </style>
 </head>
 <body>
-    <h1>AI Prompt Library</h1>
-    <p>Choose your discipline and find the right prompt for your current need.</p>
-
-    <div class="discipline">
-        <h2>🧠 UX Researcher</h2>
-        
-        <div class="section">
-            <h3>🎯 Plan Research <span class="count">(18 prompts)</span></h3>
-            <ul>
-                <li><a href="prioritize-your-research-goals.md">Prioritize Your Research Goals</a></li>
-                <li><a href="plan-research-for-a-tight-timeline-with-limited-re.md">Plan Research For A Tight Timeline</a></li>
-                <li><a href="choose-the-best-research-method.md">Choose The Best Research Method</a></li>
-                <li><a href="create-a-research-strategy-that-supports-the-produ.md">Create A Research Strategy</a></li>
-                <li><a href="get-unstuck-when-starting-a-research-project.md">Get Unstuck When Starting</a></li>
-                <li><a href="identify-the-right-scope-for-your-research-project.md">Identify The Right Scope</a></li>
-                <li><a href="combine-qual-and-quant-with-purpose.md">Combine Qual And Quant</a></li>
-                <li><a href="audit-a-research-plan-for-inclusivity-and-accessib.md">Audit For Inclusivity</a></li>
-                <li><a href="break-down-a-large-research-question-into-actionab.md">Break Down Large Questions</a></li>
-                <li><a href="turn-stakeholder-requests-into-clear-research-goal.md">Turn Stakeholder Requests Into Goals</a></li>
-                <li><a href="create-a-user-research-budget.md">Create A Research Budget</a></li>
-                <li><a href="determine-the-ideal-sample-size.md">Determine Sample Size</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>🎤 Run Interviews <span class="count">(8 prompts)</span></h3>
-            <ul>
-                <li><a href="create-an-generative-interview-guide-from-research.md">Create Interview Guide</a></li>
-                <li><a href="tailor-interview-questions-for-specific-research-t.md">Tailor Interview Questions</a></li>
-                <li><a href="reword-leading-research-questions-to-be-neutral.md">Fix Leading Questions</a></li>
-                <li><a href="create-inclusion-criteria-for-participants-without.md">Create Inclusion Criteria</a></li>
-                <li><a href="create-a-recruitment-plan-for-hard-to-reach-audien.md">Recruit Hard-to-Reach Users</a></li>
-                <li><a href="design-a-high-impact-screener.md">Design A Screener</a></li>
-                <li><a href="identify-red-flags-in-participants-that-could-skew.md">Identify Participant Red Flags</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>📊 Analyze Data <span class="count">(15 prompts)</span></h3>
-            <ul>
-                <li><a href="get-unstuck-on-synthesis.md">Get Unstuck On Synthesis</a></li>
-                <li><a href="synthesize-insights-to-be-more-actionable.md">Make Insights More Actionable</a></li>
-                <li><a href="frameworks-to-synthesize-large-amounts-of-qualitat.md">Synthesize Large Datasets</a></li>
-                <li><a href="distinguish-signals-from-noise-in-a-messy-data-set.md">Find Signals In Messy Data</a></li>
-                <li><a href="overcome-analysis-paralysis.md">Overcome Analysis Paralysis</a></li>
-                <li><a href="categorize-large-scale-survey-data.md">Categorize Survey Data</a></li>
-                <li><a href="define-and-write-a-survey.md">Write A Survey</a></li>
-                <li><a href="evaluate-an-existing-survey-for-bias,-fatigue,-and.md">Evaluate Survey For Bias</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>📢 Present Findings <span class="count">(12 prompts)</span></h3>
-            <ul>
-                <li><a href="make-your-research-land.md">Make Your Research Land</a></li>
-                <li><a href="craft-an-executive-summary.md">Craft Executive Summary</a></li>
-                <li><a href="share-research-findings-that-a-stakeholder-may-not.md">Share Unwelcome Findings</a></li>
-                <li><a href="make-findings-more-actionable-for-stakeholders.md">Make Findings Actionable</a></li>
-                <li><a href="turn-research-insights-into-a-story-that-drives-ac.md">Turn Insights Into Story</a></li>
-                <li><a href="create-actionable-recommendations-based-on-insight.md">Create Actionable Recommendations</a></li>
-            </ul>
-        </div>
+    <h1>🚀 AI Prompt Library</h1>
+    
+    <div class="stats">
+        <strong>135 prompts</strong> for user researchers and product managers.<br>
+        Click any prompt to view the template. Copy/paste into ChatGPT, Claude, etc.
     </div>
-
-    <div class="discipline">
-        <h2>📊 Product Manager</h2>
-        
-        <div class="section">
-            <h3>🎯 Strategy & Vision <span class="count">(12 prompts)</span></h3>
-            <ul>
-                <li><a href="brainstorm-a-product-vision.md">Brainstorm Product Vision</a></li>
-                <li><a href="brainstorm-positioning-ideas.md">Brainstorm Positioning</a></li>
-                <li><a href="identify-north-star-metric.md">Identify North Star Metric</a></li>
-                <li><a href="brainstorm-team-level-okrs.md">Brainstorm Team OKRs</a></li>
-                <li><a href="create-a-product-requirements-document-prd.md">Create PRD</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>📈 Market Analysis <span class="count">(8 prompts)</span></h3>
-            <ul>
-                <li><a href="competitor-analysis.md">Competitor Analysis</a></li>
-                <li><a href="perform-swot-analysis.md">SWOT Analysis</a></li>
-                <li><a href="estimate-market-size-tam-sam-tom.md">Estimate Market Size</a></li>
-                <li><a href="identify-icp-ideal-customer-profile.md">Identify Ideal Customer</a></li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>💡 Ideation <span class="count">(10 prompts)</span></h3>
-            <ul>
-                <li><a href="brainstorm-new-ideas-existing-product.md">Brainstorm Ideas (Existing Product)</a></li>
-                <li><a href="brainstorm-new-ideas-new-product.md">Brainstorm Ideas (New Product)</a></li>
-                <li><a href="brainstorm-experiments-existing-product.md">Brainstorm Experiments</a></li>
-                <li><a href="prioritize-features.md">Prioritize Features</a></li>
-            </ul>
-        </div>
+    
+    <div class="all-prompts">
+        <ul>
+            <li><a href="Analyze Feature Requests 1dcb1fbd87d98103a7b5ee74fdea11dd.md">Analyze Feature Requests 1Dcb1Fbd87D98103A7B5Ee74Fdea11Dd</a></li>
+            <li><a href="Analyze Porter’s Five Forces 1dcb1fbd87d98105aecdc8e1911b2e20.md">Analyze Porter’S Five Forces 1Dcb1Fbd87D98105Aecdc8E1911B2E20</a></li>
+            <li><a href="Brainstorm Experiments Existing Product 1dcb1fbd87d98137a865c4e4232d532b.md">Brainstorm Experiments Existing Product 1Dcb1Fbd87D98137A865C4E4232D532B</a></li>
+            <li><a href="Brainstorm Experiments New Product 1dcb1fbd87d981fe8ddaf6b34f5350a8.md">Brainstorm Experiments New Product 1Dcb1Fbd87D981Fe8Ddaf6B34F5350A8</a></li>
+            <li><a href="Brainstorm GTM Motions 1dcb1fbd87d98148995febd0b69827fd.md">Brainstorm Gtm Motions 1Dcb1Fbd87D98148995Febd0B69827Fd</a></li>
+            <li><a href="Brainstorm Growth Loops 1dcb1fbd87d981f88b96cb5cb82b8268.md">Brainstorm Growth Loops 1Dcb1Fbd87D981F88B96Cb5Cb82B8268</a></li>
+            <li><a href="Brainstorm Marketing Ideas 1dcb1fbd87d98163ab18d1008ff97bf7.md">Brainstorm Marketing Ideas 1Dcb1Fbd87D98163Ab18D1008Ff97Bf7</a></li>
+            <li><a href="Brainstorm Monetization Strategy 1dcb1fbd87d98110b513fc5d05054314.md">Brainstorm Monetization Strategy 1Dcb1Fbd87D98110B513Fc5D05054314</a></li>
+            <li><a href="Brainstorm New Ideas Existing Product 1dcb1fbd87d981c49ac4fd444f027025.md">Brainstorm New Ideas Existing Product 1Dcb1Fbd87D981C49Ac4Fd444F027025</a></li>
+            <li><a href="Brainstorm New Ideas New Product 1dcb1fbd87d981c2a5f4e35c80d351b8.md">Brainstorm New Ideas New Product 1Dcb1Fbd87D981C2A5F4E35C80D351B8</a></li>
+            <li><a href="Brainstorm Positioning Ideas 1dcb1fbd87d981aa80a3ccff87bbf77a.md">Brainstorm Positioning Ideas 1Dcb1Fbd87D981Aa80A3Ccff87Bbf77A</a></li>
+            <li><a href="Brainstorm Product Name 1dcb1fbd87d9815c8720ededfb1779b0.md">Brainstorm Product Name 1Dcb1Fbd87D9815C8720Ededfb1779B0</a></li>
+            <li><a href="Brainstorm Taglines 1dcb1fbd87d9815b919bdda36855a130.md">Brainstorm Taglines 1Dcb1Fbd87D9815B919Bdda36855A130</a></li>
+            <li><a href="Brainstorm Team-Level OKRs 1dcb1fbd87d9818895d0e77faa0ae2fd.md">Brainstorm Team Level Okrs 1Dcb1Fbd87D9818895D0E77Faa0Ae2Fd</a></li>
+            <li><a href="Brainstorm a Beachhead Segment 1dcb1fbd87d981819c04dee0e35a457e.md">Brainstorm a Beachhead Segment 1Dcb1Fbd87D981819C04Dee0E35A457E</a></li>
+            <li><a href="Brainstorm a Product Vision 1dcb1fbd87d9819ebadcf144dfd59ad0.md">Brainstorm a Product Vision 1Dcb1Fbd87D9819Ebadcf144Dfd59Ad0</a></li>
+            <li><a href="Cohort Analysis 1dcb1fbd87d9810f86bfd67afb797942.md">Cohort Analysis 1Dcb1Fbd87D9810F86Bfd67Afb797942</a></li>
+            <li><a href="Competitor Analysis 1dcb1fbd87d981b58e0efb6dad5986a3.md">Competitor Analysis 1Dcb1Fbd87D981B58E0Efb6Dad5986A3</a></li>
+            <li><a href="Create Detailed Test Scenarios 1dcb1fbd87d981f88716f3666c840721.md">Create Detailed Test Scenarios 1Dcb1Fbd87D981F88716F3666C840721</a></li>
+            <li><a href="Create Job Stories 1dcb1fbd87d981c0943bd4fc5a9cb684.md">Create Job Stories 1Dcb1Fbd87D981C0943Bd4Fc5A9Cb684</a></li>
+            <li><a href="Create User Stories 1dcb1fbd87d9813faec7fbad452df943.md">Create User Stories 1Dcb1Fbd87D9813Faec7Fbad452Df943</a></li>
+            <li><a href="Create WWAs 1dcb1fbd87d9812699d8d55a2cc89714.md">Create Wwas 1Dcb1Fbd87D9812699D8D55A2Cc89714</a></li>
+            <li><a href="Create a Product Requirements Document (PRD) 1dcb1fbd87d98169a690e36f6dd7f2d5.md">Create a Product Requirements Document (Prd) 1Dcb1Fbd87D98169A690E36F6Dd7F2D5</a></li>
+            <li><a href="Customer Outreach 1dcb1fbd87d98188b897d6d0518a4e35.md">Customer Outreach 1Dcb1Fbd87D98188B897D6D0518A4E35</a></li>
+            <li><a href="Develop a GTM Strategy 1dcb1fbd87d9819aafcbf1ab3bbc4688.md">Develop a Gtm Strategy 1Dcb1Fbd87D9819Aafcbf1Ab3Bbc4688</a></li>
+            <li><a href="Draft a Privacy Policy 1dcb1fbd87d981a9a4cbdf91212dd2db.md">Draft a Privacy Policy 1Dcb1Fbd87D981A9A4Cbdf91212Dd2Db</a></li>
+            <li><a href="Draft an NDA 1dcb1fbd87d981faa0eae3dadccb8289.md">Draft An Nda 1Dcb1Fbd87D981Faa0Eae3Dadccb8289</a></li>
+            <li><a href="Estimate Market Size (TAM, SAM, TOM) 1dcb1fbd87d98193a417ebf0d1cc208d.md">Estimate Market Size (Tam, Sam, Tom) 1Dcb1Fbd87D98193A417Ebf0D1Cc208D</a></li>
+            <li><a href="Generate SQL queries 1dcb1fbd87d9816fbf32f899e6e51770.md">Generate Sql Queries 1Dcb1Fbd87D9816Fbf32F899E6E51770</a></li>
+            <li><a href="Generate Value Proposition Statements 1dcb1fbd87d98117be3ef0cbf5c71b81.md">Generate Value Proposition Statements 1Dcb1Fbd87D98117Be3Ef0Cbf5C71B81</a></li>
+            <li><a href="Generate a Business Model 1dcb1fbd87d981d9ab9fe58a44dc283e.md">Generate a Business Model 1Dcb1Fbd87D981D9Ab9Fe58A44Dc283E</a></li>
+            <li><a href="Generate a Dummy Dataset for Testing 1dcb1fbd87d981519d9dcee77f324e6c.md">Generate a Dummy Dataset for Testing 1Dcb1Fbd87D981519D9Dcee77F324E6C</a></li>
+            <li><a href="Generate a Lean Canvas 1dcb1fbd87d981be8e86e51b87cf20b5.md">Generate a Lean Canvas 1Dcb1Fbd87D981Be8E86E51B87Cf20B5</a></li>
+            <li><a href="Generate a Product Strategy 1dcb1fbd87d9817bb1aef83bfb2138fa.md">Generate a Product Strategy 1Dcb1Fbd87D9817Bb1Aef83Bfb2138Fa</a></li>
+            <li><a href="Generate a Value Proposition 1dcb1fbd87d981fdacbdd47ab7d72fa6.md">Generate a Value Proposition 1Dcb1Fbd87D981Fdacbdd47Ab7D72Fa6</a></li>
+            <li><a href="Help With a Pre-Mortem Analysis 1dcb1fbd87d981649e42d0d084ad5daa.md">Help with a Pre Mortem Analysis 1Dcb1Fbd87D981649E42D0D084Ad5Daa</a></li>
+            <li><a href="Identify Assumptions Existing Product 1dcb1fbd87d9811bb7d5ec53226f40de.md">Identify Assumptions Existing Product 1Dcb1Fbd87D9811Bb7D5Ec53226F40De</a></li>
+            <li><a href="Identify Assumptions New Product 1dcb1fbd87d981ebbc64f429f9a1482f.md">Identify Assumptions New Product 1Dcb1Fbd87D981Ebbc64F429F9A1482F</a></li>
+            <li><a href="Identify Grammar And Flow Errors 1dcb1fbd87d9818cab52f011413d608b.md">Identify Grammar and Flow Errors 1Dcb1Fbd87D9818Cab52F011413D608B</a></li>
+            <li><a href="Identify ICP (Ideal Customer Profile) 1dcb1fbd87d98170b68dc5d536c02db6.md">Identify Icp (Ideal Customer Profile) 1Dcb1Fbd87D98170B68Dc5D536C02Db6</a></li>
+            <li><a href="Identify North Star Metric 1dcb1fbd87d9814b9de1db452b7eed8b.md">Identify North Star Metric 1Dcb1Fbd87D9814B9De1Db452B7Eed8B</a></li>
+            <li><a href="Identify Potential Market Segments 1dcb1fbd87d981e09552eab329527162.md">Identify Potential Market Segments 1Dcb1Fbd87D981E09552Eab329527162</a></li>
+            <li><a href="Outcome-Based Roadmap 1dcb1fbd87d9817ebbfbe917109d6959.md">Outcome Based Roadmap 1Dcb1Fbd87D9817Ebbfbe917109D6959</a></li>
+            <li><a href="Perform Ansoff Matrix Analysis 1dcb1fbd87d981419de2f3def0fd9c02.md">Perform Ansoff Matrix Analysis 1Dcb1Fbd87D981419De2F3Def0Fd9C02</a></li>
+            <li><a href="Perform PESTLE Analysis 1dcb1fbd87d981ee8660e6929e68f1f5.md">Perform Pestle Analysis 1Dcb1Fbd87D981Ee8660E6929E68F1F5</a></li>
+            <li><a href="Perform SWOT Analysis 1dcb1fbd87d9817eb5decc38fce916dd.md">Perform Swot Analysis 1Dcb1Fbd87D9817Eb5Decc38Fce916Dd</a></li>
+            <li><a href="Prioritize Assumptions 1dcb1fbd87d981e4ba8be39b55a04b90.md">Prioritize Assumptions 1Dcb1Fbd87D981E4Ba8Be39B55A04B90</a></li>
+            <li><a href="Prioritize Features 1dcb1fbd87d981b79e1cfaa5660375c0.md">Prioritize Features 1Dcb1Fbd87D981B79E1Cfaa5660375C0</a></li>
+            <li><a href="Review a PM Resume 1dcb1fbd87d9810cb0a6d8cf8ed46ed4.md">Review a Pm Resume 1Dcb1Fbd87D9810Cb0A6D8Cf8Ed46Ed4</a></li>
+            <li><a href="SEO Optimization 1dcb1fbd87d98163b351fb371d6a9ffa.md">Seo Optimization 1Dcb1Fbd87D98163B351Fb371D6A9Ffa</a></li>
+            <li><a href="Sentiment Analysis 1dcb1fbd87d98171bd78ccac9550d8c0.md">Sentiment Analysis 1Dcb1Fbd87D98171Bd78Ccac9550D8C0</a></li>
+            <li><a href="Summarize a Customer Interview 1dcb1fbd87d981b48996f429a2b526fc.md">Summarize a Customer Interview 1Dcb1Fbd87D981B48996F429A2B526Fc</a></li>
+            <li><a href="Summarize an Internal Meeting 1dcb1fbd87d9816b9b5ad28f08962846.md">Summarize An Internal Meeting 1Dcb1Fbd87D9816B9B5Ad28F08962846</a></li>
+            <li><a href="Untitled 1dcb1fbd87d981a183d9d36f797126ef.md">Untitled 1Dcb1Fbd87D981A183D9D36F797126Ef</a></li>
+            <li><a href="User Personas Research 1dcb1fbd87d981d8848df9cb3360c814.md">User Personas Research 1Dcb1Fbd87D981D8848Df9Cb3360C814</a></li>
+            <li><a href="User Segmentation 1dcb1fbd87d98167b6baf7bd18e2a4eb.md">User Segmentation 1Dcb1Fbd87D98167B6Baf7Bd18E2A4Eb</a></li>
+            <li><a href="articulate-the-impact-of-your-user-research-work-f.md">Articulate the Impact of Your User Research Work F</a></li>
+            <li><a href="audit-a-research-plan-for-inclusivity-and-accessib.md">Audit a Research Plan for Inclusivity and Accessib</a></li>
+            <li><a href="brainstorm-and-choose-the-right-deliverable.md">Brainstorm and Choose the Right Deliverable</a></li>
+            <li><a href="break-down-a-large-research-question-into-actionab.md">Break Down a Large Research Question Into Actionab</a></li>
+            <li><a href="categorize-large-scale-survey-data.md">Categorize Large Scale Survey Data</a></li>
+            <li><a href="choose-the-best-research-method.md">Choose the Best Research Method</a></li>
+            <li><a href="choose-the-right-survey-type-for-your-research-goa.md">Choose the Right Survey Type for Your Research Goa</a></li>
+            <li><a href="combine-qual-and-quant-with-purpose.md">Combine Qual and Quant with Purpose</a></li>
+            <li><a href="connect-research-to-product-metrics-and-quantify-p.md">Connect Research to Product Metrics and Quantify P</a></li>
+            <li><a href="convert-sensitive-research-insights-into-shareable.md">Convert Sensitive Research Insights Into Shareable</a></li>
+            <li><a href="craft-a-portfolio-case-study-that-highlights-your-.md">Craft a Portfolio Case Study That Highlights Your </a></li>
+            <li><a href="craft-a-segmentation-survey-from-qualitative-perso.md">Craft a Segmentation Survey From Qualitative Perso</a></li>
+            <li><a href="craft-an-executive-summary.md">Craft An Executive Summary</a></li>
+            <li><a href="craft-professional-and-engaging-participant-commun.md">Craft Professional and Engaging Participant Commun</a></li>
+            <li><a href="create-a-business-plan-for-a-user-research-project.md">Create a Business Plan for a User Research Project</a></li>
+            <li><a href="create-a-concept-test-interview-guide.md">Create a Concept Test Interview Guide</a></li>
+            <li><a href="create-a-one-pager-to-showcase-the-business-value-.md">Create a One Pager to Showcase the Business Value </a></li>
+            <li><a href="create-a-quantitative-research-plan-to-evaluate-qu.md">Create a Quantitative Research Plan to Evaluate Qu</a></li>
+            <li><a href="create-a-recruitment-plan-for-hard-to-reach-audien.md">Create a Recruitment Plan for Hard to Reach Audien</a></li>
+            <li><a href="create-a-research-strategy-that-supports-the-produ.md">Create a Research Strategy That Supports the Produ</a></li>
+            <li><a href="create-a-user-research-budget.md">Create a User Research Budget</a></li>
+            <li><a href="create-a-workshop-for-analyzing-research-sessions.md">Create a Workshop for Analyzing Research Sessions</a></li>
+            <li><a href="create-a-workshop-to-kick-off-discovery-projects.md">Create a Workshop to Kick Off Discovery Projects</a></li>
+            <li><a href="create-actionable-recommendations-based-on-insight.md">Create Actionable Recommendations Based On Insight</a></li>
+            <li><a href="create-an-generative-interview-guide-from-research.md">Create An Generative Interview Guide From Research</a></li>
+            <li><a href="create-an-interview-script-for-a-journey-map.md">Create An Interview Script for a Journey Map</a></li>
+            <li><a href="create-inclusion-criteria-for-participants-without.md">Create Inclusion Criteria for Participants Without</a></li>
+            <li><a href="create-usability-testing-tasks.md">Create Usability Testing Tasks</a></li>
+            <li><a href="define-a-research-workshop-and-agenda.md">Define a Research Workshop and Agenda</a></li>
+            <li><a href="define-and-write-a-survey.md">Define and Write a Survey</a></li>
+            <li><a href="demonstrate-the-long-term-impact-of-research-to-le.md">Demonstrate the Long Term Impact of Research to Le</a></li>
+            <li><a href="design-a-collaborative-prioritization-session-with.md">Design a Collaborative Prioritization Session With</a></li>
+            <li><a href="design-a-high-impact-screener.md">Design a High Impact Screener</a></li>
+            <li><a href="determine-the-business-impact-of-a-user-research-p.md">Determine the Business Impact of a User Research P</a></li>
+            <li><a href="determine-the-ideal-sample-size.md">Determine the Ideal Sample Size</a></li>
+            <li><a href="develop-a-meaningful-journey-map.md">Develop a Meaningful Journey Map</a></li>
+            <li><a href="distinguish-signals-from-noise-in-a-messy-data-set.md">Distinguish Signals From Noise in a Messy Data Set</a></li>
+            <li><a href="draft-multiple-insight-statements-from-the-same-th.md">Draft Multiple Insight Statements From the Same Th</a></li>
+            <li><a href="enhance-your-research-report.md">Enhance Your Research Report</a></li>
+            <li><a href="evaluate-an-existing-survey-for-bias,-fatigue,-and.md">Evaluate An Existing Survey for Bias, Fatigue, And</a></li>
+            <li><a href="frameworks-to-synthesize-large-amounts-of-qualitat.md">Frameworks to Synthesize Large Amounts of Qualitat</a></li>
+            <li><a href="get-started-on-a-persona-research-project.md">Get Started On a Persona Research Project</a></li>
+            <li><a href="get-started-with-jobs-to-be-done-jtbd-in-user-re.md">Get Started with Jobs to Be Done Jtbd in User Re</a></li>
+            <li><a href="get-unstuck-on-synthesis.md">Get Unstuck On Synthesis</a></li>
+            <li><a href="get-unstuck-when-starting-a-research-project.md">Get Unstuck When Starting a Research Project</a></li>
+            <li><a href="handle-stakeholder-pushback-on-a-user-research-pro.md">Handle Stakeholder Pushback On a User Research Pro</a></li>
+            <li><a href="identify-red-flags-in-participants-that-could-skew.md">Identify Red Flags in Participants That Could Skew</a></li>
+            <li><a href="identify-the-right-scope-for-your-research-project.md">Identify the Right Scope for Your Research Project</a></li>
+            <li><a href="make-findings-more-actionable-for-stakeholders.md">Make Findings More Actionable for Stakeholders</a></li>
+            <li><a href="make-your-research-land.md">Make Your Research Land</a></li>
+            <li><a href="organize-research-findings-to-align-with-goals-and.md">Organize Research Findings to Align with Goals And</a></li>
+            <li><a href="overcome-analysis-paralysis.md">Overcome Analysis Paralysis</a></li>
+            <li><a href="pitch-research-projects-aligned-with-organizationa.md">Pitch Research Projects Aligned with Organizationa</a></li>
+            <li><a href="plan-a-3-month-roadmap-that-aligns-research-with-p.md">Plan a 3 Month Roadmap That Aligns Research with P</a></li>
+            <li><a href="plan-a-concept-test.md">Plan a Concept Test</a></li>
+            <li><a href="plan-and-run-a-question-gathering-workshop-with-st.md">Plan and Run a Question Gathering Workshop with St</a></li>
+            <li><a href="plan-research-for-a-tight-timeline-with-limited-re.md">Plan Research for a Tight Timeline with Limited Re</a></li>
+            <li><a href="prepare-for-a-senior-uxr-interview-with-strategic-.md">Prepare for a Senior Uxr Interview with Strategic </a></li>
+            <li><a href="prioritize-your-research-goals.md">Prioritize Your Research Goals</a></li>
+            <li><a href="qualitative-usability-test-research-plan.md">Qualitative Usability Test Research Plan</a></li>
+            <li><a href="quantitative-usability-test-research-plan.md">Quantitative Usability Test Research Plan</a></li>
+            <li><a href="refine-questions-for-unmoderated-sessions.md">Refine Questions for Unmoderated Sessions</a></li>
+            <li><a href="reflect,-prioritize,-and-create-a-research-plan.md">Reflect, Prioritize, and Create a Research Plan</a></li>
+            <li><a href="reframe-vague-or-weak-insights-into-compelling-nar.md">Reframe Vague or Weak Insights Into Compelling Nar</a></li>
+            <li><a href="review-high-level-findings-to-prepare-for-a-discus.md">Review High Level Findings to Prepare for a Discus</a></li>
+            <li><a href="reword-leading-research-questions-to-be-neutral.md">Reword Leading Research Questions to Be Neutral</a></li>
+            <li><a href="share-research-findings-that-a-stakeholder-may-not.md">Share Research Findings That a Stakeholder May Not</a></li>
+            <li><a href="suggested-survey-wording-to-ask-about-brand-attrib.md">Suggested Survey Wording to Ask About Brand Attrib</a></li>
+            <li><a href="synthesize-insights-to-be-more-actionable.md">Synthesize Insights to Be More Actionable</a></li>
+            <li><a href="tailor-interview-questions-for-specific-research-t.md">Tailor Interview Questions for Specific Research T</a></li>
+            <li><a href="thought-partner-for-creating-a-survey.md">Thought Partner for Creating a Survey</a></li>
+            <li><a href="transform-research-objectives-into-actionable-ques.md">Transform Research Objectives Into Actionable Ques</a></li>
+            <li><a href="translate-insights-into-hypotheses-for-product-tea.md">Translate Insights Into Hypotheses for Product Tea</a></li>
+            <li><a href="turn-past-research-into-reusable-insights.md">Turn Past Research Into Reusable Insights</a></li>
+            <li><a href="turn-research-insights-into-a-story-that-drives-ac.md">Turn Research Insights Into a Story That Drives Ac</a></li>
+            <li><a href="turn-stakeholder-asks-into-focused,-actionable-res.md">Turn Stakeholder Asks Into Focused, Actionable Res</a></li>
+            <li><a href="turn-stakeholder-requests-into-clear-research-goal.md">Turn Stakeholder Requests Into Clear Research Goal</a></li>
+            <li><a href="understand-and-apply-the-jtbd-four-forces-diagram.md">Understand and Apply the Jtbd Four Forces Diagram</a></li>
+            <li><a href="write-a-performance-review-that-showcases-your-inf.md">Write a Performance Review That Showcases Your Inf</a></li>
+        </ul>
     </div>
-
-    <hr style="margin: 40px 0;">
-    <p><strong>Total: 140+ prompts</strong> | <a href="https://github.com/dredding8/ai-prompt-library">View on GitHub</a></p>
+    
+    <p style="margin-top: 40px; text-align: center; color: #666;">
+        <a href="https://github.com/dredding8/ai-prompt-library">View on GitHub</a>
+    </p>
 </body>
 </html>
