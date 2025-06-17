@@ -1,138 +1,147 @@
 # AI Prompt Library
 
-A comprehensive collection of user research prompts to help streamline and improve research processes.
+A comprehensive collection of prompts for user researchers and product managers.
 
-## 🎯 Planning & Strategy
+## All Prompts
 
+- [Analyze Feature Requests 1Dcb1Fbd87D98103A7B5Ee74Fdea11Dd](Analyze Feature Requests 1dcb1fbd87d98103a7b5ee74fdea11dd.md)
+- [Analyze Porter’S Five Forces 1Dcb1Fbd87D98105Aecdc8E1911B2E20](Analyze Porter’s Five Forces 1dcb1fbd87d98105aecdc8e1911b2e20.md)
+- [Brainstorm Experiments Existing Product 1Dcb1Fbd87D98137A865C4E4232D532B](Brainstorm Experiments Existing Product 1dcb1fbd87d98137a865c4e4232d532b.md)
+- [Brainstorm Experiments New Product 1Dcb1Fbd87D981Fe8Ddaf6B34F5350A8](Brainstorm Experiments New Product 1dcb1fbd87d981fe8ddaf6b34f5350a8.md)
+- [Brainstorm Gtm Motions 1Dcb1Fbd87D98148995Febd0B69827Fd](Brainstorm GTM Motions 1dcb1fbd87d98148995febd0b69827fd.md)
+- [Brainstorm Growth Loops 1Dcb1Fbd87D981F88B96Cb5Cb82B8268](Brainstorm Growth Loops 1dcb1fbd87d981f88b96cb5cb82b8268.md)
+- [Brainstorm Marketing Ideas 1Dcb1Fbd87D98163Ab18D1008Ff97Bf7](Brainstorm Marketing Ideas 1dcb1fbd87d98163ab18d1008ff97bf7.md)
+- [Brainstorm Monetization Strategy 1Dcb1Fbd87D98110B513Fc5D05054314](Brainstorm Monetization Strategy 1dcb1fbd87d98110b513fc5d05054314.md)
+- [Brainstorm New Ideas Existing Product 1Dcb1Fbd87D981C49Ac4Fd444F027025](Brainstorm New Ideas Existing Product 1dcb1fbd87d981c49ac4fd444f027025.md)
+- [Brainstorm New Ideas New Product 1Dcb1Fbd87D981C2A5F4E35C80D351B8](Brainstorm New Ideas New Product 1dcb1fbd87d981c2a5f4e35c80d351b8.md)
+- [Brainstorm Positioning Ideas 1Dcb1Fbd87D981Aa80A3Ccff87Bbf77A](Brainstorm Positioning Ideas 1dcb1fbd87d981aa80a3ccff87bbf77a.md)
+- [Brainstorm Product Name 1Dcb1Fbd87D9815C8720Ededfb1779B0](Brainstorm Product Name 1dcb1fbd87d9815c8720ededfb1779b0.md)
+- [Brainstorm Taglines 1Dcb1Fbd87D9815B919Bdda36855A130](Brainstorm Taglines 1dcb1fbd87d9815b919bdda36855a130.md)
+- [Brainstorm Team Level Okrs 1Dcb1Fbd87D9818895D0E77Faa0Ae2Fd](Brainstorm Team-Level OKRs 1dcb1fbd87d9818895d0e77faa0ae2fd.md)
+- [Brainstorm A Beachhead Segment 1Dcb1Fbd87D981819C04Dee0E35A457E](Brainstorm a Beachhead Segment 1dcb1fbd87d981819c04dee0e35a457e.md)
+- [Brainstorm A Product Vision 1Dcb1Fbd87D9819Ebadcf144Dfd59Ad0](Brainstorm a Product Vision 1dcb1fbd87d9819ebadcf144dfd59ad0.md)
+- [Cohort Analysis 1Dcb1Fbd87D9810F86Bfd67Afb797942](Cohort Analysis 1dcb1fbd87d9810f86bfd67afb797942.md)
+- [Competitor Analysis 1Dcb1Fbd87D981B58E0Efb6Dad5986A3](Competitor Analysis 1dcb1fbd87d981b58e0efb6dad5986a3.md)
+- [Create Detailed Test Scenarios 1Dcb1Fbd87D981F88716F3666C840721](Create Detailed Test Scenarios 1dcb1fbd87d981f88716f3666c840721.md)
+- [Create Job Stories 1Dcb1Fbd87D981C0943Bd4Fc5A9Cb684](Create Job Stories 1dcb1fbd87d981c0943bd4fc5a9cb684.md)
+- [Create User Stories 1Dcb1Fbd87D9813Faec7Fbad452Df943](Create User Stories 1dcb1fbd87d9813faec7fbad452df943.md)
+- [Create Wwas 1Dcb1Fbd87D9812699D8D55A2Cc89714](Create WWAs 1dcb1fbd87d9812699d8d55a2cc89714.md)
+- [Create A Product Requirements Document (Prd) 1Dcb1Fbd87D98169A690E36F6Dd7F2D5](Create a Product Requirements Document (PRD) 1dcb1fbd87d98169a690e36f6dd7f2d5.md)
+- [Customer Outreach 1Dcb1Fbd87D98188B897D6D0518A4E35](Customer Outreach 1dcb1fbd87d98188b897d6d0518a4e35.md)
+- [Develop A Gtm Strategy 1Dcb1Fbd87D9819Aafcbf1Ab3Bbc4688](Develop a GTM Strategy 1dcb1fbd87d9819aafcbf1ab3bbc4688.md)
+- [Draft A Privacy Policy 1Dcb1Fbd87D981A9A4Cbdf91212Dd2Db](Draft a Privacy Policy 1dcb1fbd87d981a9a4cbdf91212dd2db.md)
+- [Draft An Nda 1Dcb1Fbd87D981Faa0Eae3Dadccb8289](Draft an NDA 1dcb1fbd87d981faa0eae3dadccb8289.md)
+- [Estimate Market Size (Tam, Sam, Tom) 1Dcb1Fbd87D98193A417Ebf0D1Cc208D](Estimate Market Size (TAM, SAM, TOM) 1dcb1fbd87d98193a417ebf0d1cc208d.md)
+- [Generate Sql Queries 1Dcb1Fbd87D9816Fbf32F899E6E51770](Generate SQL queries 1dcb1fbd87d9816fbf32f899e6e51770.md)
+- [Generate Value Proposition Statements 1Dcb1Fbd87D98117Be3Ef0Cbf5C71B81](Generate Value Proposition Statements 1dcb1fbd87d98117be3ef0cbf5c71b81.md)
+- [Generate A Business Model 1Dcb1Fbd87D981D9Ab9Fe58A44Dc283E](Generate a Business Model 1dcb1fbd87d981d9ab9fe58a44dc283e.md)
+- [Generate A Dummy Dataset For Testing 1Dcb1Fbd87D981519D9Dcee77F324E6C](Generate a Dummy Dataset for Testing 1dcb1fbd87d981519d9dcee77f324e6c.md)
+- [Generate A Lean Canvas 1Dcb1Fbd87D981Be8E86E51B87Cf20B5](Generate a Lean Canvas 1dcb1fbd87d981be8e86e51b87cf20b5.md)
+- [Generate A Product Strategy 1Dcb1Fbd87D9817Bb1Aef83Bfb2138Fa](Generate a Product Strategy 1dcb1fbd87d9817bb1aef83bfb2138fa.md)
+- [Generate A Value Proposition 1Dcb1Fbd87D981Fdacbdd47Ab7D72Fa6](Generate a Value Proposition 1dcb1fbd87d981fdacbdd47ab7d72fa6.md)
+- [Help With A Pre Mortem Analysis 1Dcb1Fbd87D981649E42D0D084Ad5Daa](Help With a Pre-Mortem Analysis 1dcb1fbd87d981649e42d0d084ad5daa.md)
+- [Identify Assumptions Existing Product 1Dcb1Fbd87D9811Bb7D5Ec53226F40De](Identify Assumptions Existing Product 1dcb1fbd87d9811bb7d5ec53226f40de.md)
+- [Identify Assumptions New Product 1Dcb1Fbd87D981Ebbc64F429F9A1482F](Identify Assumptions New Product 1dcb1fbd87d981ebbc64f429f9a1482f.md)
+- [Identify Grammar And Flow Errors 1Dcb1Fbd87D9818Cab52F011413D608B](Identify Grammar And Flow Errors 1dcb1fbd87d9818cab52f011413d608b.md)
+- [Identify Icp (Ideal Customer Profile) 1Dcb1Fbd87D98170B68Dc5D536C02Db6](Identify ICP (Ideal Customer Profile) 1dcb1fbd87d98170b68dc5d536c02db6.md)
+- [Identify North Star Metric 1Dcb1Fbd87D9814B9De1Db452B7Eed8B](Identify North Star Metric 1dcb1fbd87d9814b9de1db452b7eed8b.md)
+- [Identify Potential Market Segments 1Dcb1Fbd87D981E09552Eab329527162](Identify Potential Market Segments 1dcb1fbd87d981e09552eab329527162.md)
+- [Outcome Based Roadmap 1Dcb1Fbd87D9817Ebbfbe917109D6959](Outcome-Based Roadmap 1dcb1fbd87d9817ebbfbe917109d6959.md)
+- [Perform Ansoff Matrix Analysis 1Dcb1Fbd87D981419De2F3Def0Fd9C02](Perform Ansoff Matrix Analysis 1dcb1fbd87d981419de2f3def0fd9c02.md)
+- [Perform Pestle Analysis 1Dcb1Fbd87D981Ee8660E6929E68F1F5](Perform PESTLE Analysis 1dcb1fbd87d981ee8660e6929e68f1f5.md)
+- [Perform Swot Analysis 1Dcb1Fbd87D9817Eb5Decc38Fce916Dd](Perform SWOT Analysis 1dcb1fbd87d9817eb5decc38fce916dd.md)
+- [Prioritize Assumptions 1Dcb1Fbd87D981E4Ba8Be39B55A04B90](Prioritize Assumptions 1dcb1fbd87d981e4ba8be39b55a04b90.md)
+- [Prioritize Features 1Dcb1Fbd87D981B79E1Cfaa5660375C0](Prioritize Features 1dcb1fbd87d981b79e1cfaa5660375c0.md)
+- [Review A Pm Resume 1Dcb1Fbd87D9810Cb0A6D8Cf8Ed46Ed4](Review a PM Resume 1dcb1fbd87d9810cb0a6d8cf8ed46ed4.md)
+- [Seo Optimization 1Dcb1Fbd87D98163B351Fb371D6A9Ffa](SEO Optimization 1dcb1fbd87d98163b351fb371d6a9ffa.md)
+- [Sentiment Analysis 1Dcb1Fbd87D98171Bd78Ccac9550D8C0](Sentiment Analysis 1dcb1fbd87d98171bd78ccac9550d8c0.md)
+- [Summarize A Customer Interview 1Dcb1Fbd87D981B48996F429A2B526Fc](Summarize a Customer Interview 1dcb1fbd87d981b48996f429a2b526fc.md)
+- [Summarize An Internal Meeting 1Dcb1Fbd87D9816B9B5Ad28F08962846](Summarize an Internal Meeting 1dcb1fbd87d9816b9b5ad28f08962846.md)
+- [Untitled 1Dcb1Fbd87D981A183D9D36F797126Ef](Untitled 1dcb1fbd87d981a183d9d36f797126ef.md)
+- [User Personas Research 1Dcb1Fbd87D981D8848Df9Cb3360C814](User Personas Research 1dcb1fbd87d981d8848df9cb3360c814.md)
+- [User Segmentation 1Dcb1Fbd87D98167B6Baf7Bd18E2A4Eb](User Segmentation 1dcb1fbd87d98167b6baf7bd18e2a4eb.md)
+- [Articulate The Impact Of Your User Research Work F](articulate-the-impact-of-your-user-research-work-f.md)
 - [Audit A Research Plan For Inclusivity And Accessib](audit-a-research-plan-for-inclusivity-and-accessib.md)
+- [Brainstorm And Choose The Right Deliverable](brainstorm-and-choose-the-right-deliverable.md)
+- [Break Down A Large Research Question Into Actionab](break-down-a-large-research-question-into-actionab.md)
+- [Categorize Large Scale Survey Data](categorize-large-scale-survey-data.md)
+- [Choose The Best Research Method](choose-the-best-research-method.md)
+- [Choose The Right Survey Type For Your Research Goa](choose-the-right-survey-type-for-your-research-goa.md)
+- [Combine Qual And Quant With Purpose](combine-qual-and-quant-with-purpose.md)
+- [Connect Research To Product Metrics And Quantify P](connect-research-to-product-metrics-and-quantify-p.md)
+- [Convert Sensitive Research Insights Into Shareable](convert-sensitive-research-insights-into-shareable.md)
+- [Craft A Portfolio Case Study That Highlights Your ](craft-a-portfolio-case-study-that-highlights-your-.md)
+- [Craft A Segmentation Survey From Qualitative Perso](craft-a-segmentation-survey-from-qualitative-perso.md)
+- [Craft An Executive Summary](craft-an-executive-summary.md)
+- [Craft Professional And Engaging Participant Commun](craft-professional-and-engaging-participant-commun.md)
 - [Create A Business Plan For A User Research Project](create-a-business-plan-for-a-user-research-project.md)
+- [Create A Concept Test Interview Guide](create-a-concept-test-interview-guide.md)
+- [Create A One Pager To Showcase The Business Value ](create-a-one-pager-to-showcase-the-business-value-.md)
 - [Create A Quantitative Research Plan To Evaluate Qu](create-a-quantitative-research-plan-to-evaluate-qu.md)
 - [Create A Recruitment Plan For Hard To Reach Audien](create-a-recruitment-plan-for-hard-to-reach-audien.md)
 - [Create A Research Strategy That Supports The Produ](create-a-research-strategy-that-supports-the-produ.md)
+- [Create A User Research Budget](create-a-user-research-budget.md)
+- [Create A Workshop For Analyzing Research Sessions](create-a-workshop-for-analyzing-research-sessions.md)
+- [Create A Workshop To Kick Off Discovery Projects](create-a-workshop-to-kick-off-discovery-projects.md)
+- [Create Actionable Recommendations Based On Insight](create-actionable-recommendations-based-on-insight.md)
+- [Create An Generative Interview Guide From Research](create-an-generative-interview-guide-from-research.md)
+- [Create An Interview Script For A Journey Map](create-an-interview-script-for-a-journey-map.md)
+- [Create Inclusion Criteria For Participants Without](create-inclusion-criteria-for-participants-without.md)
+- [Create Usability Testing Tasks](create-usability-testing-tasks.md)
+- [Define A Research Workshop And Agenda](define-a-research-workshop-and-agenda.md)
+- [Define And Write A Survey](define-and-write-a-survey.md)
+- [Demonstrate The Long Term Impact Of Research To Le](demonstrate-the-long-term-impact-of-research-to-le.md)
+- [Design A Collaborative Prioritization Session With](design-a-collaborative-prioritization-session-with.md)
+- [Design A High Impact Screener](design-a-high-impact-screener.md)
+- [Determine The Business Impact Of A User Research P](determine-the-business-impact-of-a-user-research-p.md)
+- [Determine The Ideal Sample Size](determine-the-ideal-sample-size.md)
+- [Develop A Meaningful Journey Map](develop-a-meaningful-journey-map.md)
+- [Distinguish Signals From Noise In A Messy Data Set](distinguish-signals-from-noise-in-a-messy-data-set.md)
+- [Draft Multiple Insight Statements From The Same Th](draft-multiple-insight-statements-from-the-same-th.md)
+- [Enhance Your Research Report](enhance-your-research-report.md)
+- [Evaluate An Existing Survey For Bias, Fatigue, And](evaluate-an-existing-survey-for-bias,-fatigue,-and.md)
+- [Frameworks To Synthesize Large Amounts Of Qualitat](frameworks-to-synthesize-large-amounts-of-qualitat.md)
+- [Get Started On A Persona Research Project](get-started-on-a-persona-research-project.md)
+- [Get Started With Jobs To Be Done Jtbd In User Re](get-started-with-jobs-to-be-done-jtbd-in-user-re.md)
+- [Get Unstuck On Synthesis](get-unstuck-on-synthesis.md)
 - [Get Unstuck When Starting A Research Project](get-unstuck-when-starting-a-research-project.md)
+- [Handle Stakeholder Pushback On A User Research Pro](handle-stakeholder-pushback-on-a-user-research-pro.md)
+- [Identify Red Flags In Participants That Could Skew](identify-red-flags-in-participants-that-could-skew.md)
 - [Identify The Right Scope For Your Research Project](identify-the-right-scope-for-your-research-project.md)
+- [Make Findings More Actionable For Stakeholders](make-findings-more-actionable-for-stakeholders.md)
+- [Make Your Research Land](make-your-research-land.md)
+- [Organize Research Findings To Align With Goals And](organize-research-findings-to-align-with-goals-and.md)
+- [Overcome Analysis Paralysis](overcome-analysis-paralysis.md)
+- [Pitch Research Projects Aligned With Organizationa](pitch-research-projects-aligned-with-organizationa.md)
 - [Plan A 3 Month Roadmap That Aligns Research With P](plan-a-3-month-roadmap-that-aligns-research-with-p.md)
 - [Plan A Concept Test](plan-a-concept-test.md)
 - [Plan And Run A Question Gathering Workshop With St](plan-and-run-a-question-gathering-workshop-with-st.md)
 - [Plan Research For A Tight Timeline With Limited Re](plan-research-for-a-tight-timeline-with-limited-re.md)
+- [Prepare For A Senior Uxr Interview With Strategic ](prepare-for-a-senior-uxr-interview-with-strategic-.md)
 - [Prioritize Your Research Goals](prioritize-your-research-goals.md)
 - [Qualitative Usability Test Research Plan](qualitative-usability-test-research-plan.md)
 - [Quantitative Usability Test Research Plan](quantitative-usability-test-research-plan.md)
+- [Refine Questions For Unmoderated Sessions](refine-questions-for-unmoderated-sessions.md)
 - [Reflect, Prioritize, And Create A Research Plan](reflect,-prioritize,-and-create-a-research-plan.md)
-
-## 📊 Research Methods & Design
-
-- [Choose The Best Research Method](choose-the-best-research-method.md)
-- [Combine Qual And Quant With Purpose](combine-qual-and-quant-with-purpose.md)
-- [Create A Concept Test Interview Guide](create-a-concept-test-interview-guide.md)
-- [Create Usability Testing Tasks](create-usability-testing-tasks.md)
-- [Get Started On A Persona Research Project](get-started-on-a-persona-research-project.md)
-- [Get Started With Jobs To Be Done Jtbd In User Re](get-started-with-jobs-to-be-done-jtbd-in-user-re.md)
-- [Understand And Apply The Jtbd Four Forces Diagram](understand-and-apply-the-jtbd-four-forces-diagram.md)
-
-## 📝 Surveys & Data Collection
-
-- [Categorize Large Scale Survey Data](categorize-large-scale-survey-data.md)
-- [Choose The Right Survey Type For Your Research Goa](choose-the-right-survey-type-for-your-research-goa.md)
-- [Craft A Segmentation Survey From Qualitative Perso](craft-a-segmentation-survey-from-qualitative-perso.md)
-- [Define And Write A Survey](define-and-write-a-survey.md)
-- [Design A High Impact Screener](design-a-high-impact-screener.md)
-- [Determine The Ideal Sample Size](determine-the-ideal-sample-size.md)
-- [Distinguish Signals From Noise In A Messy Data Set](distinguish-signals-from-noise-in-a-messy-data-set.md)
-- [Evaluate An Existing Survey For Bias, Fatigue, And](evaluate-an-existing-survey-for-bias,-fatigue,-and.md)
-- [Suggested Survey Wording To Ask About Brand Attrib](suggested-survey-wording-to-ask-about-brand-attrib.md)
-- [Thought Partner For Creating A Survey](thought-partner-for-creating-a-survey.md)
-
-## 🎤 Interviews & Participant Research
-
-- [Craft Professional And Engaging Participant Commun](craft-professional-and-engaging-participant-commun.md)
-- [Create An Generative Interview Guide From Research](create-an-generative-interview-guide-from-research.md)
-- [Create An Interview Script For A Journey Map](create-an-interview-script-for-a-journey-map.md)
-- [Create Inclusion Criteria For Participants Without](create-inclusion-criteria-for-participants-without.md)
-- [Identify Red Flags In Participants That Could Skew](identify-red-flags-in-participants-that-could-skew.md)
-- [Prepare For A Senior Uxr Interview With Strategic ](prepare-for-a-senior-uxr-interview-with-strategic-.md)
-- [Tailor Interview Questions For Specific Research T](tailor-interview-questions-for-specific-research-t.md)
-
-## 🔬 Analysis & Synthesis
-
-- [Convert Sensitive Research Insights Into Shareable](convert-sensitive-research-insights-into-shareable.md)
-- [Frameworks To Synthesize Large Amounts Of Qualitat](frameworks-to-synthesize-large-amounts-of-qualitat.md)
-- [Get Unstuck On Synthesis](get-unstuck-on-synthesis.md)
-- [Overcome Analysis Paralysis](overcome-analysis-paralysis.md)
 - [Reframe Vague Or Weak Insights Into Compelling Nar](reframe-vague-or-weak-insights-into-compelling-nar.md)
+- [Review High Level Findings To Prepare For A Discus](review-high-level-findings-to-prepare-for-a-discus.md)
+- [Reword Leading Research Questions To Be Neutral](reword-leading-research-questions-to-be-neutral.md)
+- [Share Research Findings That A Stakeholder May Not](share-research-findings-that-a-stakeholder-may-not.md)
+- [Suggested Survey Wording To Ask About Brand Attrib](suggested-survey-wording-to-ask-about-brand-attrib.md)
 - [Synthesize Insights To Be More Actionable](synthesize-insights-to-be-more-actionable.md)
+- [Tailor Interview Questions For Specific Research T](tailor-interview-questions-for-specific-research-t.md)
+- [Thought Partner For Creating A Survey](thought-partner-for-creating-a-survey.md)
+- [Transform Research Objectives Into Actionable Ques](transform-research-objectives-into-actionable-ques.md)
 - [Translate Insights Into Hypotheses For Product Tea](translate-insights-into-hypotheses-for-product-tea.md)
 - [Turn Past Research Into Reusable Insights](turn-past-research-into-reusable-insights.md)
 - [Turn Research Insights Into A Story That Drives Ac](turn-research-insights-into-a-story-that-drives-ac.md)
-
-## 📋 Testing & Evaluation
-
-- [Refine Questions For Unmoderated Sessions](refine-questions-for-unmoderated-sessions.md)
-
-## 🗺️ Journey Mapping & User Understanding
-
-- [Develop A Meaningful Journey Map](develop-a-meaningful-journey-map.md)
-
-## 📢 Communication & Stakeholder Management
-
-- [Brainstorm And Choose The Right Deliverable](brainstorm-and-choose-the-right-deliverable.md)
-- [Craft An Executive Summary](craft-an-executive-summary.md)
-- [Handle Stakeholder Pushback On A User Research Pro](handle-stakeholder-pushback-on-a-user-research-pro.md)
-- [Make Findings More Actionable For Stakeholders](make-findings-more-actionable-for-stakeholders.md)
-- [Make Your Research Land](make-your-research-land.md)
-- [Share Research Findings That A Stakeholder May Not](share-research-findings-that-a-stakeholder-may-not.md)
 - [Turn Stakeholder Asks Into Focused, Actionable Res](turn-stakeholder-asks-into-focused,-actionable-res.md)
 - [Turn Stakeholder Requests Into Clear Research Goal](turn-stakeholder-requests-into-clear-research-goal.md)
-
-## 📈 Business Impact & Metrics
-
-- [Articulate The Impact Of Your User Research Work F](articulate-the-impact-of-your-user-research-work-f.md)
-- [Connect Research To Product Metrics And Quantify P](connect-research-to-product-metrics-and-quantify-p.md)
-- [Create A One Pager To Showcase The Business Value ](create-a-one-pager-to-showcase-the-business-value-.md)
-- [Demonstrate The Long Term Impact Of Research To Le](demonstrate-the-long-term-impact-of-research-to-le.md)
-- [Determine The Business Impact Of A User Research P](determine-the-business-impact-of-a-user-research-p.md)
-
-## 🎨 Workshops & Collaboration
-
-- [Create A Workshop For Analyzing Research Sessions](create-a-workshop-for-analyzing-research-sessions.md)
-- [Create A Workshop To Kick Off Discovery Projects](create-a-workshop-to-kick-off-discovery-projects.md)
-- [Define A Research Workshop And Agenda](define-a-research-workshop-and-agenda.md)
-- [Design A Collaborative Prioritization Session With](design-a-collaborative-prioritization-session-with.md)
-
-## 💼 Project Management & Operations
-
-- [Break Down A Large Research Question Into Actionab](break-down-a-large-research-question-into-actionab.md)
-- [Create A User Research Budget](create-a-user-research-budget.md)
-- [Pitch Research Projects Aligned With Organizationa](pitch-research-projects-aligned-with-organizationa.md)
-- [Transform Research Objectives Into Actionable Ques](transform-research-objectives-into-actionable-ques.md)
-
-## 📝 Reporting & Documentation
-
-- [Create Actionable Recommendations Based On Insight](create-actionable-recommendations-based-on-insight.md)
-- [Enhance Your Research Report](enhance-your-research-report.md)
-- [Organize Research Findings To Align With Goals And](organize-research-findings-to-align-with-goals-and.md)
-- [Review High Level Findings To Prepare For A Discus](review-high-level-findings-to-prepare-for-a-discus.md)
-
-## 🎯 Career & Professional Development
-
-- [Craft A Portfolio Case Study That Highlights Your ](craft-a-portfolio-case-study-that-highlights-your-.md)
+- [Understand And Apply The Jtbd Four Forces Diagram](understand-and-apply-the-jtbd-four-forces-diagram.md)
 - [Write A Performance Review That Showcases Your Inf](write-a-performance-review-that-showcases-your-inf.md)
-
-## 🔍 Quality & Ethics
-
-- [Reword Leading Research Questions To Be Neutral](reword-leading-research-questions-to-be-neutral.md)
-
-## 📋 Other Prompts
-
-- [Draft Multiple Insight Statements From The Same Th](draft-multiple-insight-statements-from-the-same-th.md)
-- [New_Index](new_index.md)
 
 ---
 
-## About This Library
-
-This collection contains **80 research prompts** designed to help user researchers at all levels streamline their work and improve their practice. Each prompt provides structured guidance for common research challenges, from planning and execution to analysis and communication.
-
-**How to use these prompts:** Click on any prompt title to view the full template. Copy the prompt text and paste it into your preferred AI assistant (ChatGPT, Claude, etc.) to get started.
+**Total: 135 prompts**
 
 **Repository:** [View on GitHub](https://github.com/dredding8/ai-prompt-library)
