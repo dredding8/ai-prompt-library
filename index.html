@@ -1,448 +1,121 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Prompt Library</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #2d3748;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .hero {
-            text-align: center;
-            padding: 60px 0 40px;
-            color: white;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            margin-bottom: 40px;
-        }
-        
-        .discipline-selector {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-        
-        .discipline-card {
-            background: white;
-            border-radius: 16px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-            border: 3px solid transparent;
-        }
-        
-        .discipline-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            border-color: #667eea;
-        }
-        
-        .discipline-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .discipline-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #1a202c;
-        }
-        
-        .discipline-subtitle {
-            color: #718096;
-            margin-bottom: 25px;
-        }
-        
-        .workflow-list {
-            list-style: none;
-            text-align: left;
-        }
-        
-        .workflow-item {
-            padding: 8px 0;
-            color: #4a5568;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        
-        .workflow-item:last-child {
-            border-bottom: none;
-        }
-        
-        .prompt-count {
-            background: #667eea;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            float: right;
-        }
-        
-        .content-area {
-            background: white;
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            margin-top: 30px;
-            display: none;
-        }
-        
-        .back-btn {
-            background: #e2e8f0;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-        
-        .back-btn:hover {
-            background: #cbd5e0;
-        }
-        
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 30px 0 15px;
-            color: #1a202c;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
-        
-        .prompt-list {
-            list-style: none;
-        }
-        
-        .prompt-item {
-            padding: 12px 0;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        
-        .prompt-item a {
-            color: #4a5568;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .prompt-item a:hover {
-            color: #667eea;
-        }
-        
-        .stats {
-            text-align: center;
-            color: white;
-            margin-top: 40px;
-        }
-        
-        .stats h3 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .discipline { border: 2px solid #ddd; margin: 20px 0; padding: 20px; border-radius: 8px; }
+        .discipline h2 { margin-top: 0; color: #333; }
+        .section { margin: 15px 0; }
+        .section h3 { color: #666; font-size: 1.1em; margin-bottom: 8px; }
+        ul { margin: 0; padding-left: 20px; }
+        li { margin: 5px 0; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .count { color: #999; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <h1>AI Prompt Library</h1>
-            <p>Choose your discipline to find the right prompt for your workflow</p>
-        </div>
+    <h1>AI Prompt Library</h1>
+    <p>Choose your discipline and find the right prompt for your current need.</p>
+
+    <div class="discipline">
+        <h2>🧠 UX Researcher</h2>
         
-        <div class="discipline-selector" id="disciplineSelector">
-            <div class="discipline-card" onclick="showDiscipline('ux')">
-                <div class="discipline-icon">🧠</div>
-                <h3 class="discipline-title">UX Researcher</h3>
-                <p class="discipline-subtitle">Plan, conduct, and analyze user research</p>
-                <ul class="workflow-list">
-                    <li class="workflow-item">🎯 Plan Research <span class="prompt-count">18</span></li>
-                    <li class="workflow-item">🎤 Run Interviews <span class="prompt-count">8</span></li>
-                    <li class="workflow-item">📊 Analyze Data <span class="prompt-count">15</span></li>
-                    <li class="workflow-item">📢 Present Findings <span class="prompt-count">12</span></li>
-                    <li class="workflow-item">🚀 Stakeholder Mgmt <span class="prompt-count">11</span></li>
-                </ul>
-            </div>
-            
-            <div class="discipline-card" onclick="showDiscipline('pm')">
-                <div class="discipline-icon">📊</div>
-                <h3 class="discipline-title">Product Manager</h3>
-                <p class="discipline-subtitle">Strategy, planning, and execution</p>
-                <ul class="workflow-list">
-                    <li class="workflow-item">🎯 Strategy & Vision <span class="prompt-count">12</span></li>
-                    <li class="workflow-item">📈 Market Analysis <span class="prompt-count">8</span></li>
-                    <li class="workflow-item">💡 Ideation <span class="prompt-count">10</span></li>
-                    <li class="workflow-item">🚀 Go-to-Market <span class="prompt-count">9</span></li>
-                    <li class="workflow-item">⚡ Operations <span class="prompt-count">15</span></li>
-                </ul>
-            </div>
-            
-            <div class="discipline-card" onclick="showDiscipline('hybrid')">
-                <div class="discipline-icon">🎨</div>
-                <h3 class="discipline-title">Cross-Functional</h3>
-                <p class="discipline-subtitle">Templates for collaboration</p>
-                <ul class="workflow-list">
-                    <li class="workflow-item">🎨 Workshops <span class="prompt-count">6</span></li>
-                    <li class="workflow-item">📝 Documentation <span class="prompt-count">8</span></li>
-                    <li class="workflow-item">🎯 Career Development <span class="prompt-count">4</span></li>
-                    <li class="workflow-item">🔍 Quality & Ethics <span class="prompt-count">3</span></li>
-                </ul>
-            </div>
+        <div class="section">
+            <h3>🎯 Plan Research <span class="count">(18 prompts)</span></h3>
+            <ul>
+                <li><a href="prioritize-your-research-goals.md">Prioritize Your Research Goals</a></li>
+                <li><a href="plan-research-for-a-tight-timeline-with-limited-re.md">Plan Research For A Tight Timeline</a></li>
+                <li><a href="choose-the-best-research-method.md">Choose The Best Research Method</a></li>
+                <li><a href="create-a-research-strategy-that-supports-the-produ.md">Create A Research Strategy</a></li>
+                <li><a href="get-unstuck-when-starting-a-research-project.md">Get Unstuck When Starting</a></li>
+                <li><a href="identify-the-right-scope-for-your-research-project.md">Identify The Right Scope</a></li>
+                <li><a href="combine-qual-and-quant-with-purpose.md">Combine Qual And Quant</a></li>
+                <li><a href="audit-a-research-plan-for-inclusivity-and-accessib.md">Audit For Inclusivity</a></li>
+                <li><a href="break-down-a-large-research-question-into-actionab.md">Break Down Large Questions</a></li>
+                <li><a href="turn-stakeholder-requests-into-clear-research-goal.md">Turn Stakeholder Requests Into Goals</a></li>
+                <li><a href="create-a-user-research-budget.md">Create A Research Budget</a></li>
+                <li><a href="determine-the-ideal-sample-size.md">Determine Sample Size</a></li>
+            </ul>
         </div>
-        
-        <div class="stats">
-            <h3>140+</h3>
-            <p>Curated prompts for researchers and product teams</p>
+
+        <div class="section">
+            <h3>🎤 Run Interviews <span class="count">(8 prompts)</span></h3>
+            <ul>
+                <li><a href="create-an-generative-interview-guide-from-research.md">Create Interview Guide</a></li>
+                <li><a href="tailor-interview-questions-for-specific-research-t.md">Tailor Interview Questions</a></li>
+                <li><a href="reword-leading-research-questions-to-be-neutral.md">Fix Leading Questions</a></li>
+                <li><a href="create-inclusion-criteria-for-participants-without.md">Create Inclusion Criteria</a></li>
+                <li><a href="create-a-recruitment-plan-for-hard-to-reach-audien.md">Recruit Hard-to-Reach Users</a></li>
+                <li><a href="design-a-high-impact-screener.md">Design A Screener</a></li>
+                <li><a href="identify-red-flags-in-participants-that-could-skew.md">Identify Participant Red Flags</a></li>
+            </ul>
         </div>
-        
-        <div class="content-area" id="contentArea">
-            <button class="back-btn" onclick="showSelector()">← Back to Disciplines</button>
-            <div id="promptContent"></div>
+
+        <div class="section">
+            <h3>📊 Analyze Data <span class="count">(15 prompts)</span></h3>
+            <ul>
+                <li><a href="get-unstuck-on-synthesis.md">Get Unstuck On Synthesis</a></li>
+                <li><a href="synthesize-insights-to-be-more-actionable.md">Make Insights More Actionable</a></li>
+                <li><a href="frameworks-to-synthesize-large-amounts-of-qualitat.md">Synthesize Large Datasets</a></li>
+                <li><a href="distinguish-signals-from-noise-in-a-messy-data-set.md">Find Signals In Messy Data</a></li>
+                <li><a href="overcome-analysis-paralysis.md">Overcome Analysis Paralysis</a></li>
+                <li><a href="categorize-large-scale-survey-data.md">Categorize Survey Data</a></li>
+                <li><a href="define-and-write-a-survey.md">Write A Survey</a></li>
+                <li><a href="evaluate-an-existing-survey-for-bias,-fatigue,-and.md">Evaluate Survey For Bias</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>📢 Present Findings <span class="count">(12 prompts)</span></h3>
+            <ul>
+                <li><a href="make-your-research-land.md">Make Your Research Land</a></li>
+                <li><a href="craft-an-executive-summary.md">Craft Executive Summary</a></li>
+                <li><a href="share-research-findings-that-a-stakeholder-may-not.md">Share Unwelcome Findings</a></li>
+                <li><a href="make-findings-more-actionable-for-stakeholders.md">Make Findings Actionable</a></li>
+                <li><a href="turn-research-insights-into-a-story-that-drives-ac.md">Turn Insights Into Story</a></li>
+                <li><a href="create-actionable-recommendations-based-on-insight.md">Create Actionable Recommendations</a></li>
+            </ul>
         </div>
     </div>
-    
-    <script>
-        const uxPrompts = {
-            "🎯 Plan Research": [
-                "Prioritize Your Research Goals",
-                "Plan Research For A Tight Timeline With Limited Resources",
-                "Plan A 3 Month Roadmap That Aligns Research With Product Goals",
-                "Create A Research Strategy That Supports The Product Roadmap",
-                "Reflect Prioritize And Create A Research Plan",
-                "Get Unstuck When Starting A Research Project",
-                "Identify The Right Scope For Your Research Project",
-                "Choose The Best Research Method",
-                "Combine Qual And Quant With Purpose",
-                "Create A User Research Budget",
-                "Audit A Research Plan For Inclusivity And Accessibility",
-                "Break Down A Large Research Question Into Actionable Parts",
-                "Transform Research Objectives Into Actionable Questions",
-                "Turn Stakeholder Requests Into Clear Research Goals",
-                "Turn Stakeholder Asks Into Focused Actionable Research",
-                "Create A Business Plan For A User Research Project",
-                "Pitch Research Projects Aligned With Organizational Goals",
-                "Determine The Ideal Sample Size"
-            ],
-            "🎤 Run Interviews": [
-                "Create An Generative Interview Guide From Research Goals",
-                "Create An Interview Script For A Journey Map",
-                "Tailor Interview Questions For Specific Research Topics",
-                "Reword Leading Research Questions To Be Neutral",
-                "Create Inclusion Criteria For Participants Without Bias",
-                "Create A Recruitment Plan For Hard To Reach Audiences",
-                "Design A High Impact Screener",
-                "Identify Red Flags In Participants That Could Skew Results"
-            ],
-            "📊 Analyze Data": [
-                "Get Unstuck On Synthesis",
-                "Synthesize Insights To Be More Actionable",
-                "Frameworks To Synthesize Large Amounts Of Qualitative Data",
-                "Distinguish Signals From Noise In A Messy Data Set",
-                "Overcome Analysis Paralysis",
-                "Draft Multiple Insight Statements From The Same Theme",
-                "Reframe Vague Or Weak Insights Into Compelling Narratives",
-                "Turn Past Research Into Reusable Insights",
-                "Choose The Right Survey Type For Your Research Goals",
-                "Define And Write A Survey",
-                "Thought Partner For Creating A Survey",
-                "Evaluate An Existing Survey For Bias Fatigue And Clarity",
-                "Suggested Survey Wording To Ask About Brand Attributes",
-                "Craft A Segmentation Survey From Qualitative Personas",
-                "Categorize Large Scale Survey Data"
-            ],
-            "📢 Present Findings": [
-                "Make Your Research Land",
-                "Craft An Executive Summary",
-                "Brainstorm And Choose The Right Deliverable",
-                "Make Findings More Actionable For Stakeholders",
-                "Share Research Findings That A Stakeholder May Not Want To Hear",
-                "Enhance Your Research Report",
-                "Organize Research Findings To Align With Goals And Priorities",
-                "Review High Level Findings To Prepare For A Discussion",
-                "Turn Research Insights Into A Story That Drives Action",
-                "Create Actionable Recommendations Based On Insights",
-                "Convert Sensitive Research Insights Into Shareable Formats",
-                "Craft Professional And Engaging Participant Communication"
-            ],
-            "🚀 Stakeholder Mgmt": [
-                "Handle Stakeholder Pushback On A User Research Project",
-                "Articulate The Impact Of Your User Research Work",
-                "Connect Research To Product Metrics And Quantify Potential Impact",
-                "Determine The Business Impact Of A User Research Project",
-                "Demonstrate The Long Term Impact Of Research To Leadership",
-                "Create A One Pager To Showcase The Business Value Of Research",
-                "Translate Insights Into Hypotheses For Product Teams",
-                "Create A Workshop For Analyzing Research Sessions",
-                "Plan And Run A Question Gathering Workshop With Stakeholders",
-                "Design A Collaborative Prioritization Session With Stakeholders",
-                "Define A Research Workshop And Agenda"
-            ]
-        };
+
+    <div class="discipline">
+        <h2>📊 Product Manager</h2>
         
-        const pmPrompts = {
-            "🎯 Strategy & Vision": [
-                "Generate A Product Strategy",
-                "Brainstorm A Product Vision",
-                "Generate A Value Proposition",
-                "Generate Value Proposition Statements",
-                "Brainstorm Positioning Ideas",
-                "Brainstorm A Beachhead Segment",
-                "Brainstorm Product Name",
-                "Brainstorm Taglines",
-                "Identify North Star Metric",
-                "Brainstorm Team Level Okrs",
-                "Outcome Based Roadmap",
-                "Create A Product Requirements Document Prd"
-            ],
-            "📈 Market Analysis": [
-                "Analyze Porter S Five Forces",
-                "Perform Pestle Analysis",
-                "Perform Swot Analysis",
-                "Perform Ansoff Matrix Analysis",
-                "Estimate Market Size Tam Sam Tom",
-                "Identify Potential Market Segments",
-                "Competitor Analysis",
-                "Help With A Pre Mortem Analysis"
-            ],
-            "💡 Ideation": [
-                "Brainstorm New Ideas Existing Product",
-                "Brainstorm New Ideas New Product",
-                "Brainstorm Experiments Existing Product",
-                "Brainstorm Experiments New Product",
-                "Brainstorm Growth Loops",
-                "Brainstorm Marketing Ideas",
-                "Brainstorm Monetization Strategy",
-                "Identify Assumptions Existing Product",
-                "Identify Assumptions New Product",
-                "Prioritize Assumptions"
-            ],
-            "🚀 Go-to-Market": [
-                "Develop A Gtm Strategy",
-                "Brainstorm Gtm Motions",
-                "Generate A Business Model",
-                "Generate A Lean Canvas",
-                "Identify Icp Ideal Customer Profile",
-                "User Personas Research",
-                "User Segmentation",
-                "Customer Outreach",
-                "Seo Optimization"
-            ],
-            "⚡ Operations": [
-                "Prioritize Features",
-                "Create User Stories",
-                "Create Job Stories",
-                "Create Wwas",
-                "Create Detailed Test Scenarios",
-                "Generate Sql Queries",
-                "Generate A Dummy Dataset For Testing",
-                "Cohort Analysis",
-                "Sentiment Analysis",
-                "Summarize A Customer Interview",
-                "Summarize An Internal Meeting",
-                "Review A Pm Resume",
-                "Draft A Privacy Policy",
-                "Draft An Nda",
-                "Identify Grammar And Flow Errors"
-            ]
-        };
-        
-        const hybridPrompts = {
-            "🎨 Workshops": [
-                "Create A Workshop To Kick Off Discovery Projects",
-                "Create A Workshop For Analyzing Research Sessions",
-                "Plan And Run A Question Gathering Workshop With Stakeholders",
-                "Design A Collaborative Prioritization Session With Stakeholders",
-                "Define A Research Workshop And Agenda",
-                "Develop A Meaningful Journey Map"
-            ],
-            "📝 Documentation": [
-                "Plan A Concept Test",
-                "Create A Concept Test Interview Guide",
-                "Qualitative Usability Test Research Plan",
-                "Quantitative Usability Test Research Plan",
-                "Create Usability Testing Tasks",
-                "Refine Questions For Unmoderated Sessions",
-                "Create A Quantitative Research Plan To Evaluate Qualitative Insights",
-                "Understand And Apply The Jtbd Four Forces Diagram"
-            ],
-            "🎯 Career Development": [
-                "Craft A Portfolio Case Study That Highlights Your Research Impact",
-                "Prepare For A Senior Uxr Interview With Strategic Questions",
-                "Write A Performance Review That Showcases Your Influence",
-                "Get Started On A Persona Research Project"
-            ],
-            "🔍 Quality & Ethics": [
-                "Audit A Research Plan For Inclusivity And Accessibility",
-                "Get Started With Jobs To Be Done Jtbd In User Research",
-                "Identify Grammar And Flow Errors"
-            ]
-        };
-        
-        function showDiscipline(discipline) {
-            document.getElementById('disciplineSelector').style.display = 'none';
-            document.getElementById('contentArea').style.display = 'block';
-            
-            let prompts, title;
-            if (discipline === 'ux') {
-                prompts = uxPrompts;
-                title = '🧠 UX Researcher Prompts';
-            } else if (discipline === 'pm') {
-                prompts = pmPrompts;
-                title = '📊 Product Manager Prompts';
-            } else {
-                prompts = hybridPrompts;
-                title = '🎨 Cross-Functional Prompts';
-            }
-            
-            let content = `<h2>${title}</h2>`;
-            
-            for (let section in prompts) {
-                content += `<h3 class="section-title">${section}</h3>`;
-                content += '<ul class="prompt-list">';
-                prompts[section].forEach(prompt => {
-                    let filename = prompt.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '.md';
-                    content += `<li class="prompt-item"><a href="${filename}">${prompt}</a></li>`;
-                });
-                content += '</ul>';
-            }
-            
-            document.getElementById('promptContent').innerHTML = content;
-        }
-        
-        function showSelector() {
-            document.getElementById('disciplineSelector').style.display = 'grid';
-            document.getElementById('contentArea').style.display = 'none';
-        }
-    </script>
+        <div class="section">
+            <h3>🎯 Strategy & Vision <span class="count">(12 prompts)</span></h3>
+            <ul>
+                <li><a href="brainstorm-a-product-vision.md">Brainstorm Product Vision</a></li>
+                <li><a href="brainstorm-positioning-ideas.md">Brainstorm Positioning</a></li>
+                <li><a href="identify-north-star-metric.md">Identify North Star Metric</a></li>
+                <li><a href="brainstorm-team-level-okrs.md">Brainstorm Team OKRs</a></li>
+                <li><a href="create-a-product-requirements-document-prd.md">Create PRD</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>📈 Market Analysis <span class="count">(8 prompts)</span></h3>
+            <ul>
+                <li><a href="competitor-analysis.md">Competitor Analysis</a></li>
+                <li><a href="perform-swot-analysis.md">SWOT Analysis</a></li>
+                <li><a href="estimate-market-size-tam-sam-tom.md">Estimate Market Size</a></li>
+                <li><a href="identify-icp-ideal-customer-profile.md">Identify Ideal Customer</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>💡 Ideation <span class="count">(10 prompts)</span></h3>
+            <ul>
+                <li><a href="brainstorm-new-ideas-existing-product.md">Brainstorm Ideas (Existing Product)</a></li>
+                <li><a href="brainstorm-new-ideas-new-product.md">Brainstorm Ideas (New Product)</a></li>
+                <li><a href="brainstorm-experiments-existing-product.md">Brainstorm Experiments</a></li>
+                <li><a href="prioritize-features.md">Prioritize Features</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr style="margin: 40px 0;">
+    <p><strong>Total: 140+ prompts</strong> | <a href="https://github.com/dredding8/ai-prompt-library">View on GitHub</a></p>
 </body>
 </html>
